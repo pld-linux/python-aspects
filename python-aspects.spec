@@ -4,7 +4,6 @@
 #	  python-logilab packages
 
 %define	module	aspects
-%include	/usr/lib/rpm/macros.python
 Summary:	Aspect Oriented Programming in Python
 Summary(pl):	Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
