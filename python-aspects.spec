@@ -6,7 +6,6 @@
 %define	module	aspects
 %include	/usr/lib/rpm/macros.python
 Summary:	Aspect Oriented Programming in Python
-Summary(pl):	Wspólne modu³y Logilab
 Name:		python-aspects
 Version:	0.1.2
 Release:	1
@@ -17,7 +16,6 @@ Source0:	ftp://ftp.logilab.fr/pub/%{module}/%{module}-%{version}.tar.gz
 URL:		http://www.logilab.org/projects/%{module}/view
 BuildRequires:	python-modules >= 2.2.1
 BuildRequires:	rpm-pythonprov
-%pyrequires_eq	python-modules
 Requires:	python-logilab-common
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
