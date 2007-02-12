@@ -5,7 +5,7 @@
 
 %define	module	aspects
 Summary:	Aspect Oriented Programming in Python
-Summary(pl):	Programowanie zorientowane aspektowo w Pythonie
+Summary(pl.UTF-8):   Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
 Version:	0.1.2
 Release:	1
@@ -26,12 +26,12 @@ create your own aspects. The current possibilities are still a bit
 limited, but it will soon provide a more exhaustive way to define and
 use more complex aspects.
 
-%description -l pl
-To jest modu≥ Pythona umoøliwiaj±cy programowanie zorientowane
-aspektowo. Na razie dostarcza zbiÛr gotowych do uøycia aspektÛw oraz
-≥atwy sposÛb tworzenia w≥asnych aspektÛw. Aktualne moøliwo∂ci s± nadal
-nieco ograniczone, ale wkrÛtce bÍdzie dostÍpna bardziej wyczerpuj±ca
-metoda definiowania i uøywania bardziej z≥oøonych aspektÛw.
+%description -l pl.UTF-8
+To jest modu≈Ç Pythona umo≈ºliwiajƒÖcy programowanie zorientowane
+aspektowo. Na razie dostarcza zbi√≥r gotowych do u≈ºycia aspekt√≥w oraz
+≈Çatwy spos√≥b tworzenia w≈Çasnych aspekt√≥w. Aktualne mo≈ºliwo≈õci sƒÖ nadal
+nieco ograniczone, ale wkr√≥tce bƒôdzie dostƒôpna bardziej wyczerpujƒÖca
+metoda definiowania i u≈ºywania bardziej z≈Ço≈ºonych aspekt√≥w.
 
 %prep
 %setup -q -n %{module}-%{version}
