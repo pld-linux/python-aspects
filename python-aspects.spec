@@ -5,7 +5,7 @@
 
 %define	module	aspects
 Summary:	Aspect Oriented Programming in Python
-Summary(pl.UTF-8):   Programowanie zorientowane aspektowo w Pythonie
+Summary(pl.UTF-8):	Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
 Version:	0.1.2
 Release:	1
