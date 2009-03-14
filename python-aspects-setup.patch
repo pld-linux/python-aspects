@@ -1,0 +1,16 @@
+diff -burNp aspects-0.1.4/setup.py aspects-0.1.4-dud/setup.py
+--- aspects-0.1.4/setup.py	2005-06-25 15:27:22.000000000 +0200
++++ aspects-0.1.4-dud/setup.py	2009-03-15 00:25:10.780861565 +0100
+@@ -16,11 +16,11 @@
+ # You should have received a copy of the GNU General Public License along with
+ # this program; if not, write to the Free Software Foundation, Inc.,
+ # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
++from __future__ import nested_scopes
+ """ Generic Setup script, takes package info from __pkginfo__.py file """
+ 
+ __revision__ = '$Id$'
+ 
+-from __future__ import nested_scopes
+ import os
+ import sys
+ import shutil
