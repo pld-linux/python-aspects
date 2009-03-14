@@ -7,12 +7,13 @@
 Summary:	Aspect Oriented Programming in Python
 Summary(pl.UTF-8):	Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
-Version:	0.1.2
+Version:	0.1.4
 Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	ftp://ftp.logilab.fr/pub/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	26bc8e8a0a8992ecbda8b8d56d2d4b12
+# Source0-md5:	b915eac498c16b365b3e83ffd5385a3a
+Patch0:		%{name}-setup.patch
 URL:		http://www.logilab.org/projects/aspects/view
 BuildRequires:	python-modules >= 2.2.1
 Requires:	python-logilab-common
@@ -35,6 +36,7 @@ metoda definiowania i używania bardziej złożonych aspektów.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 python setup.py build
