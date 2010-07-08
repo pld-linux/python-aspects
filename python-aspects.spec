@@ -8,7 +8,7 @@ Summary:	Aspect Oriented Programming in Python
 Summary(pl.UTF-8):	Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
 Version:	0.1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	ftp://ftp.logilab.fr/pub/%{module}/%{module}-%{version}.tar.gz
