@@ -16,6 +16,7 @@ Source0:	ftp://ftp.logilab.fr/pub/%{module}/%{module}-%{version}.tar.gz
 Patch0:		%{name}-setup.patch
 URL:		http://www.logilab.org/projects/aspects/view
 BuildRequires:	python-modules >= 2.2.1
+BuildRequires:	rpm-pythonprov
 Requires:	python-logilab-common
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
