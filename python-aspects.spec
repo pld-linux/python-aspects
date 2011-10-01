@@ -1,9 +1,4 @@
-
-# TODO:
-#	- check if %%{py_sitescriptdir} used here doesn't break other
-#	  python-logilab packages
-
-%define	module	aspects
+%define		module	aspects
 Summary:	Aspect Oriented Programming in Python
 Summary(pl.UTF-8):	Programowanie zorientowane aspektowo w Pythonie
 Name:		python-aspects
@@ -17,6 +12,7 @@ Patch0:		%{name}-setup.patch
 URL:		http://www.logilab.org/projects/aspects/view
 BuildRequires:	python-modules >= 2.2.1
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-logilab-common
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,14 +36,15 @@ metoda definiowania i używania bardziej złożonych aspektów.
 %patch0 -p1
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
+%{__python} setup.py install \
+	--optimize=2 \
+	--root=$RPM_BUILD_ROOT
 
-python setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
-
-find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm -f {} \;
+%py_postclean
 
 # see install section of python-logilab-common for explanation
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/logilab/__init__.*
@@ -58,4 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO doc/*en.txt
-%{py_sitescriptdir}/*
+%{py_sitescriptdir}/logilab/%{module}
+%{py_sitescriptdir}/%{module}-*.egg-info
