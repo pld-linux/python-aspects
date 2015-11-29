@@ -12,7 +12,7 @@ Patch0:		%{name}-setup.patch
 URL:		http://www.logilab.org/projects/aspects/view
 BuildRequires:	python-modules >= 2.2.1
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-logilab-common
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
