@@ -8,7 +8,7 @@ diff -burNp aspects-0.1.4/setup.py aspects-0.1.4-dud/setup.py
 +from __future__ import nested_scopes
  """ Generic Setup script, takes package info from __pkginfo__.py file """
  
- __revision__ = '$Id$'
+ __revision__ = '$Id: setup.py,v 1.20 2005/06/15 12:16:32 adim Exp $'
  
 -from __future__ import nested_scopes
  import os
